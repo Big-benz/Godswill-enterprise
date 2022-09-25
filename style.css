@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 80%;
+    height: 140vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgb(31, 31, 37)),url(pexels-morthy-jameson-9588215.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header{
+    background-color:transparent;
+    display: flex;
+    height: 5rem;
+}
+.header-container{
+    display:flex;
+}
+.logo{
+    padding: 1.7rem 3rem;
+    color: beige;
+    font-family: logoFont;
+}
+.logo-img{
+    width: 12rem;
+    height: 4.5rem;
+}
+@font-face{
+    font-family: myFont;
+    src: url(Product-Sans-Italic.ttf);
+}
+@font-face{
+    font-family: logoFont;
+    src: url(DancingScript1.ttf);
+}
+nav ul{
+    position:absolute;
+    top: .1rem;
+    right: 10rem;
+    padding: 1rem 1rem;
+    display: flex;
+    column-gap: 5rem;
+    margin: 1rem 7rem;
+
+}
+.nav-list{
+    color:white;
+    font-family: myFont;
+    padding-bottom: .6rem;
+}
+.nav-list:hover{
+    color: rgb(236, 194, 138);
+    border-bottom: 3px solid rgb(209, 175, 133);
+
+}
+.list-items{
+    list-style: none;
+    padding-bottom: .3rem;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: myFont;
+}
+.home-container-wrapper{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    position: cover;
+
+}
+.login-btn{
+    position: absolute;
+    top: 1.2rem;
+    right: 5rem;
+}
+.btn-login{
+    padding: .8rem .8rem;
+    background-color: burlywood;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    border: none;
+}
+
+.place-items-center{
+    display: none;
+}
+.anchor-login{
+    text-decoration: none;
+    color: white;
+}
+.anchor-login:hover{
+    color: black;
+}
+@media screen and (max-width: 1132px){
+    .list-items{
+        display: none;
+        position: absolute;
+        top: 7rem;
+        right: .1rem;
+        row-gap: 2rem;
+        background-color:burlywood;
+        padding: 2rem 2rem;
+        transition: smooth 2s;
+        
+    }
+    .list-items.active{
+        display: grid;
+    }
+    .nav-list{
+        font-size: 1.5rem;
+
+    }
+    .nav-list:hover{
+        color: white;
+        border-bottom: 1px solid white;
+
+    }
+    .btn-login{
+        position: absolute;
+        left: -29rem;
+        align-items: center;
+
+    }
+    .place-items-center{
+        position: absolute;
+        top: 1.8rem;
+        right: 2rem;
+        display: block;
+        background-color: burlywood;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        border-radius: 5px;
+        padding: .4rem .4rem;
+    }
+
+}
+
+@media(max-width:936px){
+    .btn-login{
+        position: absolute;
+        left: -21rem;
+        align-items: center;
+
+    }
+
+}
+@media(max-width:752px){
+    .btn-login{
+        position: absolute;
+        left: -15rem;
+        align-items: center;
+
+    }
+
+}
+@media(max-width:544px){
+    .btn-login{
+        position: absolute;
+        left: -9rem;
+        align-items: center;
+
+    }
+
+}
+
